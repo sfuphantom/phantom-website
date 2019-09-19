@@ -1,0 +1,63 @@
+// expand_row
+    .team_expands_btn { 
+        top: 50%; left: 0%; 
+        transform: translate( -50%, -50% ); 
+        padding: 20px 25px 20px 30px; 
+    }
+    .competition_expands_btn { 
+        bottom: 0%; left: 50%; 
+        transform: translate( -50%, 50% ); 
+        padding: 20px 25px; 
+    }
+    .opportunity_expands_btn { 
+        top: 50%; right: 0%; 
+        transform: translate( 50%, -50% ); 
+        padding: 20px 30px 20px 25px; 
+    }
+        .team_expand_photo { 
+            top: 50px; 
+            padding: 0 100px; 
+        }
+        .competition_expand_photo { 
+            left: 100px; 
+            padding: 50px 0; 
+        }
+        .opportunity_expand_photo { 
+            right: 100px; 
+            padding: 50px 0; 
+        }
+        .expand_h1 { color: $grey_color; }
+        .expand_link_a { 
+            color: #282C34;
+            border: 2px solid #282C34;
+        } // expand_link_a
+
+.expanded_row { background-color: $grey_color; }
+    .team_expanded_btn { transform: rotateY( 180deg ) translate( 50%, -50% ) !important; }
+    .competition_expanded_btn { transform: rotateX( 180deg ) translate( -50%, -50% ) !important; }
+    .opportunity_expanded_btn { transform: rotateY( 180deg ) translate( -50%, -50% ) !important; }
+        #team_expanded, #competition_expanded, #opportunity_expanded { color: white; }
+        .team_expanded_photo { 
+            top: 0; 
+            width: 80%; 
+            padding: 50px 50px 50px 100px; 
+        }
+        .competition_expanded_photo { 
+            left: 0; 
+            padding: 0; 
+        }
+        .opportunity_expanded_photo { 
+            right: 0; 
+            padding: 0; 
+        }
+        .expanded_link_a { 
+            color: white;
+            border: 2px solid white;
+        } // expanded_link_a
+
+@media #{$media} { 
+
+    #team_expand, #competition_expand, #opportunity_expand { display: none; }
+    #team_expanded, #competition_expanded, #opportunity_expanded { display: block !important; }
+
+} // media

@@ -1,0 +1,29 @@
+#hero { 
+    height: 100vh; 
+    background: url("../images/background.jpg") right top/cover no-repeat fixed;
+
+    .hero_title { 
+        position: absolute; 
+        top: 50%; left: 50%; 
+        transform: translate(-50%, -50%);
+
+        display: block; 
+        padding-left: 100px; 
+        color: white;
+        #heroTyper { font-size: 4em; } // Default 3
+    } // hero_title
+
+    @media #{$media} { 
+        .hero_title { 
+            padding-left: 10px !important; 
+            text-align: center; 
+        }
+    } // media hero_title
+
+    #hero_scrollDown {
+        position: absolute;
+        top: 90%; left: 50%;
+        transform: translate(-50%, -50%);
+    } // hero_scrollDown
+
+} // hero

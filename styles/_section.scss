@@ -1,0 +1,48 @@
+.expander_row { 
+
+    position: relative; 
+    margin: 156px 0; 
+    background-color: white; 
+
+    .expands_btn {
+        z-index: 5;
+        background-color: #6441A4;
+        color: white;
+        position: absolute;
+        &:hover { background-color: $grey_color; border-radius: 50px; }
+    } // expands_btn
+
+    @media #{$media} { .expands_btn { display: none; } }
+
+    .expander_col { 
+        padding: 50px; 
+        .expander_link { 
+            margin-top: 50px; 
+            .expander_link_a {
+                border-radius: 25px; 
+                padding: 15px 50px; 
+                &:hover {
+                    background-color: #6441A4; 
+                    border-color: #6441A4; 
+                    border-radius: 0; 
+                    color: white; 
+                }
+            } // expander_link_a
+        } // expander_link
+    } // expander_col
+
+    div > img { position: relative; }
+
+} // expander_row
+
+@media #{$media} { 
+
+    .expander_row { 
+        margin: 0; 
+        background-color: $grey_color;
+        
+        div { padding: 0 !important; }
+        .expander_col { padding: 50px !important; }
+    }
+
+} // media

@@ -1,0 +1,26 @@
+#contact { 
+    background-color: $grey_color; 
+    color: white; 
+    padding: 50px !important;
+    
+    .contact_h3 { 
+        font-weight: 100; 
+        margin: 150px; 
+        margin-top: 100px; 
+    } // contact_h3
+    
+    @media #{$media} { 
+        .contact_h3 { margin: 50px 10px !important; } 
+    } // media contact_h3
+
+    #contact_links > a { 
+        div {
+            display: inline-block; 
+            margin: 15px;                 
+            padding: 20px 25px;
+        }
+        #contact_link_facebook:hover { background-color: $facebook_blue_color; }
+        #contact_link_instagram:hover { background-color: $instagram_pink_color; }
+    } // contact_links
+
+} // contact

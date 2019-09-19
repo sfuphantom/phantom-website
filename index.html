@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> Team Phantom </title>
+
+    <!-- External Stylesheets < Last Update: 2019-09-08 > -->
+    <!-- Google Fonts --> <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,400"/>
+    <!-- Bootstrap 4.3.1 --> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <!-- Animate 3.7.0 --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"/>
+
+    <!-- Internal Stylesheets -->
+    <!-- Favicon --> <link rel="shortcut icon" href="favicon.ico"/> 
+    <!-- Index --> <link rel="stylesheet" href="styles/index.css"/> 
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+
+        <a id="navbar_logo" href="#hero"> <img src="images/logo_white.png"/> </a> 
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar_collapse"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button> 
+
+        <div id="navbar_collapse" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">         
+                <li class="nav-item"> <a class="nav-link" href="#team"> Team </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#competition"> Competition </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#opportunity"> Opportunity </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#sponsors"> Sponsors </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contact"> Contact </a> </li>
+            </ul>
+        </div> <!-- main.js navbar_collapse -->
+
+    </nav> <!-- https://getbootstrap.com/docs/4.3/components/navbar/ -->
+
+    <div id="main">
+
+        <section id="hero"> 
+
+            <div class="hero_title row">
+                <h2 class="animated fadeIn delay-1s"> <b> We Are </b> </h2> 
+                <h1 id="heroTyper"></h1> <!-- main.js -->
+            </div> <!-- hero_title-->
+
+            <div id="hero_scrollDown">
+                <a href="#team"> 
+                    <button id="hero_scrollDown_btn" class="scroll_btn animated fadeInUp delay-5s"> 
+                        <i class="fas fa-chevron-down fa-2x"></i> 
+                    </button> 
+                </a>
+            </div> <!-- heroBtn --> 
+
+        </section> <!-- hero -->
+
+        <section id="team" class="container">
+            <div class="row"> 
+                <img 
+                    alt="Team Photo"
+                    class="mobile_photo display_none" 
+                    src="images/team.jpg"
+                > 
+            </div> <!-- Mobile Team Photo -->
+
+            <div id="team_row" class="row expander_row">
+                
+                <button id="team_btn" class="expands_btn team_expands_btn"> 
+                    <i class="fas fa-chevron-right fa-2x "></i> 
+                </button> 
+
+                <div class="col-sm-6"> 
+                    <img 
+                        alt="Team Photo"
+                        id="team_photo" 
+                        class="desktop_photo team_expand_photo" 
+                        src="images/team.jpg"
+                    > 
+                </div> <!-- Desktop Team Photo -->
+                
+                <div id="team_col" class="expander_col col-sm-6 d-flex align-content-center flex-wrap">
+                    <h1 id="team_expand" class="expand_h1"> 
+                        Zero Emission <br/> 
+                        Electric Vehicles <br/> 
+                        Design Team <br/> 
+                        Simon Fraser University 
+                    </h1> <!-- team_expand -->
+                    <div id="team_expanded" class="display_none">
+                        <h1 class="expanded_h1"> Our Team </h1>
+                        <br/>
+                        <p>
+                            Team Phantom is a design team of over 40 dedicated Simon Fraser University
+                            students with the goal of building an electric vehicle to compete in the
+                            2019 Formula SAE Electric Competition while increasing mindfulness about green energy sources.
+                            <br/> <br/>
+                            This project will inspire both research
+                            as well as the development of sustainable transportation, all while engaging
+                            zero-emission vehicle innovators of the future.
+                            In addition to preparing for competition, we work with SFU and the City of Surrey 
+                            to attend events geared toward the promotion of renewable, clean energy and 
+                            the importance of sustainable transport.
+                        </p>
+                    </div> <!-- team_expanded -->
+                </div> <!-- expander_col -->
+
+            </div> <!-- team_row -->
+        </section> <!-- team -->
+
+        <section id="competition" class="container">
+            <div class="row"> 
+                <img 
+                    alt="Competition Photo"
+                    class="mobile_photo display_none" 
+                    src="images/competition.jpg"
+                > 
+            </div> <!-- Mobile Competition Photo -->
+            <div id="competition_row" class="row expander_row"> 
+
+                <button id="competition_btn" class="expands_btn competition_expands_btn"> 
+                    <i class="fas fa-chevron-up fa-2x "></i> 
+                </button>
+
+                <div id="competition_col" class="expander_col col-sm-6 d-flex align-content-center flex-wrap">
+
+                    <h1 id="competition_expand" class="expand_h1"> 
+                        Formula SAE Electric <br/> 
+                        International <br/> 
+                        Racecar Design <br/> 
+                        Competition 
+                    </h1> <!-- expand -->
+
+                    <div id="competition_expanded" class="display_none">
+                        <h1 class="expanded_h1"> Formula SAE Electric </h1>
+                        <br/>
+                        <p>
+                            Formula SAE Electric is an international competition taking place in Lincoln, Nebraska
+                            that will push the team to its limits for design, performance, and safety. 
+                            The end goal of the team is to have a race vehicle with an outstanding design capable of
+                            competing in all of the categories outlined. 
+                            <br/> <br/>
+                            In order for our car to compete, the team must build a fast,
+                            powerful and cost effective car that will be judged on its design, ingenuity,
+                            cost and overall performance. The competition encourages innovation,
+                            research and creative design that will not only train upcoming engineers,
+                            but also plays a role in shaping the future of electric vehicles.
+                        </p>
+                    </div> <!-- expanded-->
+
+                    <p class="expander_link"> 
+                        <a id="competition_link_a" class="expander_link_a expand_link_a" href="https://bit.ly/2N7Qtom"> 
+                            Competition Website 
+                        </a> 
+                    </p> <!-- competition link -->
+                
+                </div> <!-- competition text -->
+
+                <div class="col-sm-6 d-flex align-content-center flex-wrap"> 
+                    <img 
+                        alt="Competition Photo"
+                        id="competition_photo" 
+                        class="desktop_photo competition_expand_photo" 
+                        src="images/competition.jpg"
+                    > 
+                </div> <!-- Desktop Competition Photo -->
+                
+            </div> <!-- expander_row -->
+        </section> <!-- competition -->
+
+        <section id="opportunity" class="container">
+            <div class="row"> 
+                <img 
+                    alt="Opportunity Photo"
+                    class="mobile_photo display_none" 
+                    src="images/opportunity.jpg"
+                > 
+            </div> <!-- Mobile Opportunity Photo -->
+            <div id="opportunity_row" class="row expander_row">
+
+                <button id="opportunity_btn" class="expands_btn opportunity_expands_btn"> 
+                    <i class="fas fa-chevron-left fa-2x "></i> 
+                </button>
+
+                <div class="col-sm-6 d-flex align-content-center flex-wrap"> 
+                    <img 
+                        alt="Opportunity Photo" 
+                        id="opportunity_photo" 
+                        class="desktop_photo opportunity_expand_photo" 
+                        src="images/opportunity.jpg"
+                    > 
+                </div> <!-- Desktop Opportunity Photo -->
+
+                <div id="opportunity_col" class="expander_col col-sm-6 d-flex align-content-center flex-wrap">
+            
+                    <h1 id="opportunity_expand" class="expand_h1"> 
+                        Innovate <br/> 
+                        Learn <br/> 
+                        Discover <br/> 
+                        Create 
+                    </h1> <!-- expand opportunity -->
+            
+                    <div id="opportunity_expanded" class="display_none">
+                        <h1 class="expanded_h1"> Opportunity </h1>
+                        <br/>
+                        <p>
+                            We are a passionate and multi-disciplinary group students from 
+                            Simon Fraser University (SFU) who are driven by our desire to 
+                            innovate for a sustainable future. Through competing against many
+                            international university teams, we will be able to network and foster
+                            connections with other innovators and industry professionals who are just
+                            as passionate as we are about engineering a better future.
+                            <br/> <br/>
+                            We welcome students from all faculties and strive to create a diverse team 
+                            of likeminded individuals who are all working toward a shared vision 
+                            of clean energy and sustainability awareness through 
+                            zero-emission vehicle design.
+                        </p>
+                    </div> <!-- expanded opportunity -->
+            
+                </div> <!-- opportunity_col -->
+
+            </div> <!-- expander_col -->
+        </section> <!-- opportunity -->
+
+        <section id="sponsors">
+            <div class="row">
+
+                <div class="sponsors_left col-sm-6 d-flex align-content-center flex-wrap">
+                    <h1> Come Change The World With Us. </h1>
+                    <br>
+                    <p>  
+                        By sponsoring Team Phantom, you are making your own mark on the
+                        future by contributing to the development of zero emission vehicles.
+                        In addition, you are helping in the education and spread of
+                        awareness concerning sustainable transportation. 
+                    </p>
+                    <p> 
+                        Your company will
+                        be able to connect with prospective talent as well as other industry
+                        professionals as we host and attend various events across the Greater
+                        Vancouver/Lower Mainland areas. 
+                    </p>
+                    <p class="sponsors_btn"> 
+                        <a class="sponsors_btn_a" href="docs/sponsorship_package.pdf"> 
+                            Sponsorship Package 
+                        </a> 
+                    </p>		
+                </div> <!-- sponsors_left -->
+
+                <div class="sponsors_right col-sm-6"> 
+
+                    <div class="row justify-content-center"> 
+                        <h1 class="sponsors_right_h1"> Premium </h1> 
+                    </div> <!-- Premium h1 -->
+                    <div class="row justify-content-center">
+                        <img 
+                            alt="Segger" 
+                            id="sponsors_premium_logo"
+                            class="sponsors_img" 
+                            src="images/sponsors/segger.png" 
+                            onclick="window.location = 'https://www.segger.com/'"
+                        />
+                    </div> <!-- Premium img -->
+
+                    <div class="row justify-content-center"> 
+                        <h1 class="sponsors_right_h1"> Platinum </h1> 
+                    </div> <!-- Platinum h1 -->
+                    <div class="row justify-content-center">
+                        <img 
+                            alt="Altium"
+                            class="sponsors_img" 
+                            src="images/sponsors/altium.png" 
+                            onclick="window.location = 'https://www.altium.com'"
+                        >
+                        <img 
+                            alt="Flir"
+                            class="sponsors_img" 
+                            src="images/sponsors/flir.png" 
+                            onclick="window.location = 'https://www.flir.com'"
+                        >
+                        <img 
+                            alt="Solidworks"
+                            class="sponsors_img" 
+                            src="images/sponsors/solidworks.png" 
+                            onclick="window.location = 'https://www.solidworks.com'"
+                        >
+                    </div> <!-- Platinum img -->
+
+                    <div class="row justify-content-center"> 
+                        <h1 class="sponsors_right_h1"> Gold </h1> 
+                    </div> <!-- Gold h1 -->
+                    <div class="row justify-content-md-center">
+                        <img 
+                            alt="Simon Fraser Students Society"
+                            class="sponsors_img" 
+                            src="images/sponsors/sfss.png" 
+                            onclick="window.location = 'https://www.sfss.ca'"
+                        >
+                        <img 
+                            alt="Tesis"    
+                            class="sponsors_img" 
+                            src="images/sponsors/tesis.png" 
+                            onclick="window.location = 'https://www.tesis-dynaware.com/en.html'"
+                        >
+                        <img 
+                            alt="Oshpark"    
+                            class="sponsors_img" 
+                            src="images/sponsors/oshpark.png" 
+                            onclick="window.location = 'https://www.oshpark.com'"
+                        >
+                        <img 
+                            alt="Mechatronics SFU"    
+                            class="sponsors_img" 
+                            src="images/sponsors/mse.png" 
+                            onclick="window.location = 'https://www.sfu.ca/mechatronics.html'"
+                        >
+                        <img 
+                            alt="Simscale"    
+                            class="sponsors_img" 
+                            src="images/sponsors/simscale.png" 
+                            onclick="window.location = 'https://www.simscale.com'"
+                        >
+                        <img 
+                            alt="Embark Sustainability"    
+                            class="sponsors_img" 
+                            src="images/sponsors/embark.png" 
+                            onclick="window.location = 'https://www.embarksustainability.org'"
+                        >
+                        <img 
+                            alt="Veva"    
+                            class="sponsors_img" 
+                            src="images/sponsors/veva.png" 
+                            onclick="window.location = 'https://www.veva.ca'"
+                        >
+                        <img 
+                            alt="Simon Fraser University"    
+                            class="sponsors_img" 
+                            src="images/sponsors/sfu.png" 
+                            onclick="window.location = 'https://www.sfu.ca'"
+                        >
+                        <img 
+                            alt="City of Surrey"    
+                            class="sponsors_img" 
+                            src="images/sponsors/surrey.png" 
+                            onclick="window.location = 'https://www.surrey.ca'"
+                        >
+                        <img 
+                            alt="Radius SFU"    
+                            class="sponsors_img" 
+                            src="images/sponsors/radius.png" 
+                            onclick="window.location = 'https://www.radiussfu.com'"
+                        >						
+                    </div> <!-- Gold img -->
+
+                </div> <!-- sponsors_right -->
+            </div> <!-- sponsors row -->
+        </section> <!-- sponsors -->
+
+        <section id="contact" class="container text-center">
+
+            <h3 class="contact_h3"> 
+                Contact Us - 
+                <a href="mailto:phantom@sfu.ca"> <b> phantom@sfu.ca </b> </a> 
+            </h3>
+
+            <h3 class="contact_h3"> 
+                Follow us on our journey as we make our mark on the integration
+                of sustainable energy and transportation solutions. 
+                As we like to say - <b> LET’S RACE! </b> 
+            </h3>
+
+            <div id="contact_links">
+                <a href="https://bit.ly/2NLcQzl"><div id="contact_link_facebook"><i class="fab fa-facebook fa-3x"></i> </div> </a>
+                <a href="https://bit.ly/2Lp1vZj"><div id="contact_link_instagram" > <i class="fab fa-instagram fa-3x"></i> </div> </a>
+            </div><!-- Contact Links -->
+
+        </section> <!-- contact -->
+
+    </div> <!-- main -->
+
+    <a id="back-to-top" class="scroll_btn animated fadeOut" href="#hero"> 
+        <i class="fas fa-chevron-up fa-2x"></i> 
+    </a> <!-- back to top -->
+
+    <!-- External Scripts < Last Update: 2019-09-08 > -->
+    <!-- jQuery 3.3.1 Core --> <script src="https://code.jquery.com/jquery-3.4.1.js"></script> <!-- Always First -->
+    <!-- popper 1.14.7--> <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <!-- bootstrap 4.3.1 Min --><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- README fontAwesome 5.0.8 All --> <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- typeitjs 6.0.3 --> <script src="https://cdn.jsdelivr.net/npm/typeit@6.0.3/dist/typeit.min.js"></script>
+
+    <!-- Internal Scripts -->
+    <script src="scripts/main.js"></script>  
+    <script src="scripts/expander.js"></script>  
+</body>
+</html>
