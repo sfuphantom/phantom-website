@@ -227,7 +227,6 @@ img {
 }
 .expander_row .expander_col .expander_link {
   margin-top: 50px;
-  flex-wrap: nowrap;
 }
 .expander_row .expander_col .expander_link .expander_link_a {
   border-radius: 25px;
@@ -392,7 +391,7 @@ img {
   filter: grayscale(100%);
   height: auto;
   padding: 50px;
-  width: 33%;
+  width: 33vh;
 }
 #sponsors .sponsors_right .sponsors_img:hover {
   cursor: pointer;
@@ -400,13 +399,13 @@ img {
   transform: scale(1.5);
 }
 #sponsors .sponsors_right .sponsors_premium_logo {
-  width: 50% !important;
+  width: 50vh !important;
 }
 #sponsors .sponsors_right .sponsors_plat {
   filter: grayscale(100%);
   height: auto;
   padding: 50px;
-  width: 40%;
+  width: 40vh;
 }
 #sponsors .sponsors_right .sponsors_plat:hover {
   cursor: pointer;
@@ -417,7 +416,7 @@ img {
   filter: grayscale(100%);
   height: auto;
   padding: 50px;
-  width: 35%;
+  width: 35vh;
 }
 #sponsors .sponsors_right .sponsors_gold:hover {
   cursor: pointer;
@@ -428,7 +427,7 @@ img {
   filter: grayscale(100%);
   height: auto;
   padding: 50px;
-  width: 30%;
+  width: 30vh;
 }
 #sponsors .sponsors_right .sponsors_silver:hover {
   cursor: pointer;
@@ -438,7 +437,7 @@ img {
   filter: grayscale(100%);
   height: auto;
   padding: 50px;
-  width: 25%;
+  width: 25vh;
 }
 #sponsors .sponsors_right .sponsors_bronze:hover {
   cursor: pointer;
