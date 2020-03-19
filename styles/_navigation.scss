@@ -43,7 +43,27 @@
                 position: absolute;
                 height: inherit;
                 width: 0.63 * 200px; // Currently at $15791 of $2500 (63%)
-                background-image: linear-gradient(135deg, white, $purple_color);
+                background: linear-gradient(135deg, #f7e8fa, $purple_color);
+                background-size: 200% 200%;
+                -webkit-animation: progress-gradient-animate 7s ease infinite;
+                -moz-animation: progress-gradient-animate 7s ease infinite;
+                animation: progress-gradient-animate 7s ease infinite;
+
+                @-webkit-keyframes progress-gradient-animate {
+                  0%{background-position:0% 50%}
+                  50%{background-position:100% 50%}
+                  100%{background-position:0% 50%}
+                }
+                @-moz-keyframes progress-gradient-animate {
+                  0%{background-position:0% 50%}
+                  50%{background-position:100% 50%}
+                  100%{background-position:0% 50%}
+                }
+                @keyframes progress-gradient-animate {
+                  0%{background-position:0% 50%}
+                  50%{background-position:100% 50%}
+                  100%{background-position:0% 50%}
+                }
               }
               .crowdfund-value::before {
                 position: absolute;

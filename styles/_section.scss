@@ -1,8 +1,8 @@
-.expander_row { 
+.expander_row {
 
-    position: relative; 
-    margin: 156px 0; 
-    background-color: white; 
+    position: relative;
+    margin: 156px 0;
+    background-color: white;
 
     .expands_btn {
         z-index: 5;
@@ -14,18 +14,18 @@
 
     @media #{$media} { .expands_btn { display: none; } }
 
-    .expander_col { 
-        padding: 50px; 
-        .expander_link { 
-            margin-top: 50px; 
+    .expander_col {
+        padding: 50px;
+        .expander_link {
+            margin-top: 50px;
             .expander_link_a {
-                border-radius: 25px; 
-                padding: 15px 50px; 
+                border-radius: 25px;
+                padding: 15px 50px;
                 &:hover {
-                    background-color: #6441A4; 
-                    border-color: #6441A4; 
-                    border-radius: 0; 
-                    color: white; 
+                    background-color: #6441A4;
+                    border-color: #6441A4;
+                    border-radius: 0;
+                    color: white;
                 }
             } // expander_link_a
         } // expander_link
@@ -35,12 +35,12 @@
 
 } // expander_row
 
-@media #{$media} { 
+@media #{$media} {
 
-    .expander_row { 
-        margin: 0; 
+    .expander_row {
+        margin: 0;
         background-color: $grey_color;
-        
+
         div { padding: 0 !important; }
         .expander_col { padding: 50px !important; }
     }
