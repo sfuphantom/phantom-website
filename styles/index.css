@@ -9,6 +9,11 @@
 }
 
 /* HTML Elements */
+* {
+  font-family: 'Montserrat', sans-serif;
+  transition: all 1s;
+}
+
 a {
   color: white;
 }
@@ -35,11 +40,6 @@ h1 {
 img {
   width: 100%;
   height: auto;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-  transition: all 1s;
 }
 
 #main {
@@ -106,6 +106,28 @@ img {
 .navbar .nav-item .nav-link:hover {
   border-bottom-color: white;
   color: white;
+}
+.navbar .nav-item .nav-link .crowdfund-progress {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 1em;
+  width: 200px;
+  background-color: white;
+}
+.navbar .nav-item .nav-link .crowdfund-progress .crowdfund-value {
+  position: absolute;
+  height: inherit;
+  width: 126px;
+  background-image: linear-gradient(135deg, white, #6441A4);
+}
+.navbar .nav-item .nav-link .crowdfund-progress .crowdfund-value::before {
+  position: absolute;
+  height: inherit;
+  content: attr(data-label);
+  font-size: 0.8em;
+  text-align: center;
+  color: #282C34;
 }
 
 #back-to-top {
@@ -330,16 +352,59 @@ img {
 }
 #sponsors .sponsors_right .sponsors_img {
   filter: grayscale(100%);
-  height: 100%;
+  height: auto;
   padding: 50px;
   width: 33%;
 }
 #sponsors .sponsors_right .sponsors_img:hover {
   cursor: pointer;
   filter: grayscale(0%);
+  transform: scale(1.5);
 }
-#sponsors .sponsors_right #sponsors_premium_logo {
+#sponsors .sponsors_right .sponsors_premium_logo {
   width: 50% !important;
+}
+#sponsors .sponsors_right .sponsors_plat {
+  filter: grayscale(100%);
+  height: auto;
+  padding: 50px;
+  width: 40%;
+}
+#sponsors .sponsors_right .sponsors_plat:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  transform: scale(1.5);
+}
+#sponsors .sponsors_right .sponsors_gold {
+  filter: grayscale(100%);
+  height: auto;
+  padding: 50px;
+  width: 35%;
+}
+#sponsors .sponsors_right .sponsors_gold:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+  transform: scale(1.5);
+}
+#sponsors .sponsors_right .sponsors_silver {
+  filter: grayscale(100%);
+  height: auto;
+  padding: 50px;
+  width: 30%;
+}
+#sponsors .sponsors_right .sponsors_silver:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+#sponsors .sponsors_right .sponsors_bronze {
+  filter: grayscale(100%);
+  height: auto;
+  padding: 50px;
+  width: 25%;
+}
+#sponsors .sponsors_right .sponsors_bronze:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
 }
 @media only screen and (max-width: 768px) {
   #sponsors .sponsors_right {

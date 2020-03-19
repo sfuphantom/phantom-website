@@ -5,23 +5,23 @@
     .container { padding: 0; }
 
 /* HTML Elements */
-    a { 
-        color: white; 
+    * { font-family: 'Montserrat', sans-serif; transition: all 1s; }
+    a {
+        color: white;
         &:hover { text-decoration: none; }
     }
-    button { 
-        border: none; 
+    button {
+        border: none;
         &:hover { cursor: pointer; }
         &:focus { outline: 0; }
     } // button
     h1 { color: white; font-size: 3em; font-weight: 100; }
     img { width: 100%; height: auto; }
 
-* { font-family: 'Montserrat', sans-serif; transition: all 1s; }
 #main { background-color: $grey_color; }
 .display_none { display: none !important; }
 
-@media #{$media} { 
+@media #{$media} {
     .desktop_photo { display: none; }
     .mobile_photo { display: block !important; }
 } // media photos

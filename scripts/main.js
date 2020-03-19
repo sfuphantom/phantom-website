@@ -1,12 +1,12 @@
 new TypeIt( "#heroTyper", {
-    strings: [" ", "Creatives", "Innovators", "Excellence", "Team Phantom"], 
+    strings: [" ", "Creatives", "Innovators", "Excellence", "Team Phantom"],
     speed: 150,
     startDelay: 1000,
     breakLines: false,
     autoStart: false
 }).go(); // TypeIt Settings - See https://typeitjs.com/
 
-$( 'a[href*="#"]' ).click( function(event) { // Navigation Scroll Animation 
+$( 'a[href*="#"]' ).click( function(event) { // Navigation Scroll Animation
 
     if ( location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname ) {
         var target = $( this.hash );
@@ -16,15 +16,15 @@ $( 'a[href*="#"]' ).click( function(event) { // Navigation Scroll Animation
             event.preventDefault();
             $( 'html, body' ).animate( {
                 scrollTop: target.offset().top - 106
-            }, 1000 ); // html body jQuery .animate 
-        } // if target.length 
+            }, 1000 ); // html body jQuery .animate
+        } // if target.length
 
-    } // if Location Check 
+    } // if Location Check
 
-} ); // Smooth Scroll Navigation 
+} ); // Smooth Scroll Navigation
 
 
-$(document).click( function (event) {  
+$(document).click( function (event) {
     if ( $("#navbar_collapse").hasClass("show") === true && !$(event.target).hasClass("navbar-toggle") ) {
         $("#navbar_collapse").collapse('toggle');
     }
@@ -37,7 +37,9 @@ $(document).ready(function() {
         if ($(this).scrollTop() > offset) {
             $('#back-to-top').addClass("fadeInUp").removeClass("fadeOut");
         } else {
-            $('#back-to-top').removeClass("fadeInUp").addClass("fadeOut");    
+            $('#back-to-top').removeClass("fadeInUp").addClass("fadeOut");
         }
     });
+    $('[data-toggle="tooltip"]').tooltip(); // Enable all tooltips
+
 }); // back to top
