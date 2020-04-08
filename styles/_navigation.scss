@@ -31,7 +31,7 @@
                 border-bottom-color: white;
                 color: white;
             }
-
+            // === CROWDFUND PROGRESS BAR ===
             .crowdfund-progress {
               display: inline-flex;
               flex-direction: row;
@@ -42,7 +42,7 @@
               .crowdfund-value {
                 position: absolute;
                 height: inherit;
-                width: 0.63 * 200px; // Currently at $15791 of $2500 (63%)
+                width: ($crowdfund_prog_value / 25000) * 200px;
                 background: linear-gradient(135deg, #f7e8fa, $purple_color);
                 background-size: 200% 200%;
                 -webkit-animation: progress-gradient-animate 7s ease infinite;

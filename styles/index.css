@@ -118,7 +118,7 @@ img {
 .navbar .nav-item .nav-link .crowdfund-progress .crowdfund-value {
   position: absolute;
   height: inherit;
-  width: 126px;
+  width: 136.728px;
   background: linear-gradient(135deg, #f7e8fa, #6441A4);
   background-size: 200% 200%;
   -webkit-animation: progress-gradient-animate 7s ease infinite;
