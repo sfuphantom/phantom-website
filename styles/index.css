@@ -10,7 +10,7 @@
 
 /* HTML Elements */
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: all 1s;
 }
 
@@ -118,7 +118,7 @@ img {
 .navbar .nav-item .nav-link .crowdfund-progress .crowdfund-value {
   position: absolute;
   height: inherit;
-  width: 136.728px;
+  width: 137.128px;
   background: linear-gradient(135deg, #f7e8fa, #6441A4);
   background-size: 200% 200%;
   -webkit-animation: progress-gradient-animate 7s ease infinite;
